@@ -1,0 +1,32 @@
+<Window x:Class="VisualSorting.App.AlgorithmInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="How it works"
+        Width="640" Height="560"
+        MinWidth="420" MinHeight="320"
+        Background="{DynamicResource WindowBackgroundBrush}"
+        WindowStartupLocation="CenterOwner"
+        ShowInTaskbar="False">
+    <DockPanel TextBlock.Foreground="{DynamicResource TextBrush}" Margin="20">
+
+        <TextBlock DockPanel.Dock="Top" x:Name="TitleText" FontSize="22" FontWeight="SemiBold" />
+
+        <Border DockPanel.Dock="Top" Background="{DynamicResource InfoPanelBrush}"
+                CornerRadius="4" Padding="12,8" Margin="0,10,0,14">
+            <StackPanel>
+                <TextBlock x:Name="ComplexityText" TextWrapping="Wrap" />
+                <TextBlock x:Name="MemoryText" TextWrapping="Wrap" Margin="0,4,0,0"
+                           Foreground="{DynamicResource MutedTextBrush}" />
+            </StackPanel>
+        </Border>
+
+        <Button DockPanel.Dock="Bottom" Content="Close" Width="90" Height="30"
+                HorizontalAlignment="Right" Margin="0,14,0,0" Click="CloseButton_Click" />
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <TextBlock x:Name="DescriptionText" TextWrapping="Wrap" FontSize="14"
+                       LineHeight="23" Margin="0,0,12,0" />
+        </ScrollViewer>
+
+    </DockPanel>
+</Window>

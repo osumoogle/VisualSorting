@@ -1,0 +1,17 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#F4F4F8" />
+    <SolidColorBrush x:Key="PanelBrush" Color="#E4E4EC" />
+    <SolidColorBrush x:Key="InfoPanelBrush" Color="#EBEBF2" />
+    <SolidColorBrush x:Key="TextBrush" Color="#24242E" />
+    <SolidColorBrush x:Key="MutedTextBrush" Color="#61616F" />
+
+    <!-- Deeper saturation than the dark theme so bars hold contrast on a light background -->
+    <SolidColorBrush x:Key="BarDefaultBrush" Color="#1E88E5" />
+    <SolidColorBrush x:Key="BarCompareBrush" Color="#F9A825" />
+    <SolidColorBrush x:Key="BarSwapBrush" Color="#E53935" />
+    <SolidColorBrush x:Key="BarOverwriteBrush" Color="#8E24AA" />
+    <SolidColorBrush x:Key="BarSortedBrush" Color="#2E7D32" />
+
+</ResourceDictionary>
